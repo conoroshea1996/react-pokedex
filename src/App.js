@@ -1,5 +1,6 @@
 import React from 'react';
 import PokeCard from './components/Pokecard/Pokecard';
+import './App.css';
 
 function App() {
   const pokemons = [
@@ -12,11 +13,14 @@ function App() {
     { id: 94, name: 'Gengar', type: 'poison', base_experience: 225 },
     { id: 133, name: 'Eevee', type: 'normal', base_experience: 65 }
   ];
+
   return (
     <div className="App">
-      {pokemons.map((pokemon) => (
-        <PokeCard pokemon={pokemon} />
-      ))}
+      <div className='cards'>
+        {pokemons.map((pokemon) => (
+          <PokeCard pokemon={pokemon} />
+        ))}
+      </div>
     </div>
   );
 }
