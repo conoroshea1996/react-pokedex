@@ -2,4 +2,6 @@
     width: 300px;
     border: 2px lightcyan solid;
     text-align: center;
+    background: white;
+    margin-top: 0.8rem;
 }

@@ -9,6 +9,7 @@ function PokeCard({ pokemon }) {
             <h2>{name}</h2>
             <h4>{type}</h4>
             <img src={baseImgUrl + id.toString().padStart(3, '0') + '.png'} />
+            <p>Exp :{base_experience}</p>
         </div>
     )
 }

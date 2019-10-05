@@ -1,5 +1,12 @@
+.hand-info{
+    text-align: center;
+}
+
 .hand{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border-bottom: 5px white dashed;
+    padding-bottom: 10px;
+    text-align: center;
 }
