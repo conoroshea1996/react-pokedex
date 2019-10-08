@@ -21,8 +21,8 @@ function PokeGame() {
         playerHand1.push(playerHand2.splice(randomIndex, 1)[0]);
     }
 
-    let player1Exp = playerHand1.reduce((a, b) => +a + +b.base_experience, 0);
-    let player2Exp = playerHand2.reduce((a, b) => +a + +b.base_experience, 0);
+    let player1Exp = playerHand1.reduce((a, b) => a + b.base_experience, 0);
+    let player2Exp = playerHand2.reduce((a, b) => a + b.base_experience, 0);
 
     return (
         <div>
